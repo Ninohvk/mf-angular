@@ -1,0 +1,23 @@
+<h1 class="m-4">Tickets</h1>
+<div class="card m-4 p-4">
+	<div class="card-body">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Detalle</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let ticket of tickets; index as i">
+					<th scope="row">{{ ticket.id}}</th>
+					<td>
+						{{ ticket.detail }}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
